@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+{% for yangilik in news_list %}
+
+   <h1><a href="{% url 'news_detail' yangilik.pk %}">{{ yangilik.title }}</a><h1>
+
+{% endfor %}
+
+
+</body>
+</html>
